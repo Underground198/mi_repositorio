@@ -1,0 +1,562 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: rgb(135, 230, 210);
+}
+
+header {
+    background-color: transparent;
+    width: 100%;
+}
+#btn-menu {
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+header label :hover {
+    cursor: pointer;
+    background:rgba(0,0,0,0.3);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+.menu li {
+    border-right: 1px solid rgb(0, 0, 0);
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    color: black;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+h1 {
+    margin: 25px 25px 25px 25px;
+    color: black;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    margin: 25px 25px 25px 25px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align:justify ;
+}
+
+select{
+    font-size: 1rem;
+}
+
+form{
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    color: black;
+    margin-top: 2.5rem;
+    margin-left: 1.875rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    display: none;
+    padding: 3.125rem;
+    background-color: rgb(60, 165, 250);
+}
+
+/*---------------------------------------------------INICIO------------------------------------------------*/
+
+.fondo_avion{
+    background-image: url(./imagenes/Portada\ vuelo.jpg);
+    background-size:cover;
+}
+
+.container{
+    grid-row-start: 2;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.inicio_titulo{
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.inicio_texto{
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    grid-row-start: 3;
+}
+.video_box{
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+}
+.video{
+    position:relative;
+    height: 0;
+    padding-top: 56.25%;
+}
+.video video{
+    width: 100%;
+    height: auto;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.transparente_footer{
+    background-color: transparent;
+}
+.inicio_forma{
+    display: grid;
+    gap: 1.25rem;
+}
+
+/*-------------------------------------------CONTACTO-----------------------------------------------*/
+.titulo_contacto{
+    color: black;
+    margin: 2rem 1rem 2rem 1rem;
+    border: 0.6rem solid rgb(0, 0, 0);
+    padding: 25px;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.secciones_contacto{
+    border-radius: 1.875rem;
+    color: black;
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    border: 0.4rem solid rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    padding: 25px;
+}
+
+/*---------------------------------------------NOSOTROS------------------------------------------------*/
+
+.nosotrossup{
+    display: grid;
+}
+.nosotrost{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.nosotrost2{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-top: 60px;
+}
+
+.imagennosotros{
+    display: flex;
+    display: grid;
+    justify-items: center;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin: 20px;
+}
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+.nosotros{
+    margin-top: 50px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 0.3fr 1fr;
+    justify-items: center;
+}
+#imagenp1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 85%;
+}
+#imagenp1>img{
+    max-width: 50%;
+    border: 2px solid black;
+}
+#imagenp2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 85%;
+}
+#imagenp2>img{
+    max-width: 50%;
+    border: 2px solid black;
+}
+#imagenp3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width: 85%;
+}
+#imagenp3>img{
+    max-width: 50%;
+    border: 2px solid black;
+}
+.textop1{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.textop2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.textop3{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 10px;
+}
+
+/*------------------------------------------PRECIOS------------------------------------------*/
+
+.selectorprecios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+
+}
+.Destino{
+    grid-column-start: 1; 
+}
+.destinos{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-right: 20px;
+}
+.Mes{
+    grid-column-start: 2;
+}
+.meses{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-right: 20px;
+}
+.Dia{
+    grid-column-start: 3;
+}
+.dias{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    margin-right: 20px;
+}
+.subtexto_p{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.masvisitados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.lugar1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.lugar2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.lugar3{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.lugar4{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.lugar5{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.lugar6{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.planes{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+.plan1{
+    grid-column-start: 1;
+}
+.plan2{
+    grid-column-start: 2;
+}
+.plan3{
+    grid-column-start: 3;
+}
+
+/*-----------------------------------------------BLOG--------------------------------------------*/
+
+.blog{
+    display: flex;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 0.3fr 1fr;
+    justify-items: center;
+}
+.subtexto_t{
+    margin-right: 0px;
+    font-size: 1.5rem;
+}
+.imagenb1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-bottom: 0;
+}
+.imagenb2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-bottom: 0;
+}
+.imagenb3{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-bottom: 0;
+}
+.textob1{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: justify;
+}
+.textob2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: justify;
+}
+.textob3{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    font-size: 1rem;
+    margin-top: 25px;
+    text-align: justify;
+}
+.bvideo{
+    display: grid;
+    margin: 10px;
+}
+.videob{
+    grid-column-start: 2;
+}
+
+/*---------------------------------------------------------------Query 768px-------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    header label{
+        display: block;
+    }
+    .menu{
+        position:absolute;
+        background: #ffffff;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    .titulo_contacto{
+        color: black;
+        margin: 2rem 1rem 2rem 1rem;
+        border: 0.3rem solid rgb(0, 0, 0);
+        
+        font-size: 1.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    .secciones_contacto{
+        border-radius: 1rem;
+        color: black;
+        margin: 2rem 1.5rem 2rem 1.5rem;
+        border: 0.25rem solid rgb(0, 0, 0);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.25rem;
+    }
+    .bvideo{
+        display: grid;
+        margin: 10px;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    p{
+        margin: 25px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8rem;
+        text-align:justify ;
+    }
+    .subtexto_p{
+        font-size: 1rem;
+    }
+    .subtexto_t{
+        font-size: 1.1rem;
+    }
+    .imagenb1{
+        width: 70%;
+    }
+    .imagenb2{
+        width: 70%;
+    }
+    .imagenb3{
+        width: 70%;
+    }
+    .textob1{
+        font-size: 0.8rem;
+    }
+    .textob2{
+        font-size: 0.8rem;
+    }
+    .textob3{
+        font-size: 0.8rem;
+    }
+    .imagenp1{
+        width: 70%;
+    }
+    .imagenp2{
+        width: 70%;
+    }
+    .imagenp3{
+        width: 70%;
+    }
+    
+    .textop1{
+        font-size: 0.8rem;
+    }
+    
+    .textop2{
+        font-size: 0.8rem;
+    }
+    
+    .textop3{
+        font-size: 0.8rem;
+    }
+}
+/*---------------------------------------------------------------Query 425px-------------------------------------------------------------------*/
+
+@media (max-width: 425px) {
+    .titulo_contacto{
+        color: black;
+        margin: 2rem 1rem 2rem 1rem;
+        border: 0.28rem solid rgb(0, 0, 0);
+        
+        font-size: 1.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    .secciones_contacto{
+        border-radius: 1rem;
+        color: black;
+        margin: 2rem 1.5rem 2rem 1.5rem;
+        border: 0.22rem solid rgb(0, 0, 0);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8rem;
+    }
+    .inicio_titulo{
+        padding: 0;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .inicio_texto{
+        padding: 0;
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+    .subtexto_t{
+        font-size: 0.9rem;
+    }
+    .textob1{
+        font-size: 0.7rem;
+    }
+    .textob2{
+        font-size: 0.7rem;
+    }
+    .textob3{
+        font-size: 0.7rem;
+    }
+}
